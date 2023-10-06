@@ -8,6 +8,14 @@
        font-style: normal;
 }
 
+@font-face {
+  font-family: 'Typo Hoop Demo';
+  src: url('../fonts/Typo_Hoop_Regular_Demo.ttf') format('truetype');
+       font-weight: "regular";
+       font-display: swap;
+       font-style: normal;
+}
+
 
 
 @tailwind base;

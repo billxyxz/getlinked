@@ -65,7 +65,7 @@ const Register = () => {
             onSubmit={handleSubmit}
             ref={formRef}
             className="font-btn w-full text-sm mt-7">
-                <div className=" w-full grid grid-cols-2 gap-7">
+                <div className=" w-full grid grid-cols-2 gap-5 md:gap-7">
                   <div className=" col-span-2 lg:col-auto">
                     <label 
                     htmlFor="team-name"

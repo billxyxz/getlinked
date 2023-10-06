@@ -27,7 +27,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="w-full min-h-[94vh] bg-[#150E28] text-gray-50 px-12 md:px-20 lg:px-32 py-24 pt-36 md:pt-48 flex flex-col lg:flex-row gap-9 overflow-hidden">
+    <section className="w-full min-h-[94vh] bg-[#150E28] text-gray-50 px-12 md:px-20 lg:px-32 py-24 pt-36 md:pt-48 flex flex-col lg:flex-row items-start gap-9 overflow-hidden">
         <div className="relative w-full lg:w-[35%] md:px-8 md:mt-12 z-10">
             <img src={Flare} className=" absolute -left-[35%] -bottom-[30%] lg:bottom-auto -z-10 filter blur-2xl lg:blur-3xl w-full" />
             <img src={SataGra} alt="" className="w-[21px] h-[25px] absolute -top-10 md:-top-16 md:left-12 right-[50%]"  />
@@ -72,7 +72,7 @@ const Contact = () => {
         <div className="relative w-full lg:w-[65%] md:px-8">
           <img src={Flare} className="absolute hidden lg:block -right-[50%] -bottom-[35%] z-0 filter blur-[104px] w-full scale-90" />  
           <img src={StarPu} alt="" className="w-[21px] h-[25px] absolute bottom-24 -right-7 md:left-5" />
-          <form onSubmit={handleSubmit} ref={contactFormRef} className="w-full max-w-xl p-4  md:p-14 flex flex-col gap-9 font-btn md:bg-white/[0.03] rounded-xl">
+          <form onSubmit={handleSubmit} ref={contactFormRef} className="w-full max-w-xl md:p-14 flex flex-col gap-7 md:gap-9 font-btn md:bg-white/[0.03] rounded-xl">
             <h5 className=" font-logo text-xl text-[#D434FE] font-semibold">Questions or need assistance?<br/>Let us know about it!</h5>
             <div 
             className="relative w-full group"

@@ -21,12 +21,12 @@ const Navbar = () => {
       }
 
   return (
-    <header className="fixed top-0 left-0 w-full px-12 md:px-20 lg:px-32 flex justify-between items-center py-[30px] pb-[20px] border-b bg-[#150E28] z-40">
+    <header className="fixed top-0 left-0 w-full px-12 md:px-20 lg:px-32 flex justify-between items-center py-4 md:py-[30px] pb-[20px] border-b bg-[#150E28] z-40">
         <Link 
         to="/"
         onClick={() => setShowNav(false)}
         > 
-          <h3 className="text-[#FFFFFF] font-logo text-[16px] sm:text-3xl lowercase font-bold cursor-pointer">get<span className=" text-[#D434FE]">linked</span></h3>
+          <h3 className="text-[#FFFFFF] font-logo text-[24px] sm:text-3xl lowercase font-bold cursor-pointer">get<span className=" text-[#D434FE]">linked</span></h3>
         </Link>
         {
             showNav ? <div 
@@ -44,9 +44,9 @@ const Navbar = () => {
             <ul className="flex flex-col md:flex-row text-lg md:text-base lg:text-lg font-medium gap-3 md:gap-6 text-white">
                 <li><a href="/">Timeline</a></li>
                 <li><a href="/">Overview</a></li>
-                <li><a
+                <li><NavLink
                 onClick={handleFaqInView}
-                href="/">FAQs</a></li>
+                to="/">FAQs</NavLink></li>
                 <li><NavLink 
                 onClick={() => setShowNav(false)}
                 style={handleActiveLink}

@@ -20,7 +20,7 @@ const Register = () => {
   const Navigate = useNavigate();
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0,0)
   }, [registered]);
 
   async function handleSubmit(e){
@@ -167,17 +167,17 @@ const Register = () => {
             <img src={SataGra} alt="" className="absolute md:hidden bottom-[186px] right-0 w-[21px] h-[25px]" />
         </div>
         {
-          registered && <section className="absolute w-full h-full top-0 left-0 bg-gray-950/[0.9] text-gray-50 flex justify-center items-start z-50 pt-24">{/**Confirmation */}
-          <div className="relative border py-14 px-12 flex flex-col justify-center items-center">
+          registered && <section className="absolute w-full h-full top-0 left-0 bg-gray-950/[0.9] text-gray-50 flex justify-center items-start z-50 pt-12 md:pt-24">{/**Confirmation */}
+          <div className="relative border py-9 md:py-14 px-6 md:px-12 flex flex-col justify-center items-center">
             <img src={StarPu} className="absolute w-[21px] h-[26px] -right-4 -top-8 opacity-90" />
             <img src={Star} className="absolute w-[21px] h-[26px] left-[22%] top-[34%] opacity-50" />
             <img src={SataGra} className="absolute w-[21px] h-[26px] right-9 bottom-6 opacity-70" />
             <div className="flex">
-              <img loading="lazy" src={SuccessDone} alt="success-done" className="w-[174px] h-[174px]" />
-              <img loading="lazy" src={SuccessMan} alt="success-man" className="w-[184px] h-[184px] -ml-[100px]" />
+              <img loading="lazy" src={SuccessDone} alt="success-done" className="w-[144px] h-[144px] md:w-[174px] md:h-[174px]" />
+              <img loading="lazy" src={SuccessMan} alt="success-man" className="w-[154px] h-[154px] md:w-[184px] md:h-[184px] -ml-[100px]" />
             </div>
             <article className=" text-center font-btn font-semibold">
-              <h5 className=" text-[32px] mb-2">Congratulations<br/>you have successfully registered!</h5>
+              <h5 className=" text-lg md:text-[32px] mb-2">Congratulations<br/>you have successfully registered!</h5>
               <p className=" text-sm mb-7">Yes, it was easy an you did it!<br/>check your mail box for next step &#128512;</p>
             </article>
             <button 

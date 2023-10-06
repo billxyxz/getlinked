@@ -24,15 +24,18 @@ import Vuzual from "../Assets/Images/vuzual.png"
 import QuestionMark from "../Assets/Images/question-mark.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons"
-import { useEffect } from "react"
+import { useEffect, } from "react"
 import { Shield } from "../Assets/svgs/Svgs"
+import FAQs from "./FAQs"
+import { useNavigate } from "react-router-dom"
 
 
 
 const Body = () => {
+  const navigate = useNavigate();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0,0);
   }, []);
 
 
@@ -43,10 +46,11 @@ const Body = () => {
           <img src={Vector} className="absolute w-[124px] md:w-[194px] right-0" />
         </article>
         <section className="relative px-12 md:px-20 lg:pb-[15px] lg:px-32 flex flex-col lg:flex-row w-full mt-10 ">{/**Hero Section */}
-            <div className="relative w-full lg:w-[55%] h-full">
+            <div className="relative w-full lg:w-[55%] h-full mb-7 lg:mb-0">
                 <img src={Flare} className=" absolute -left-28 -top-[150px] z-0 opacity-30 w-full h-[400px] blur-3xl" />
                 <article className="flex flex-col w-full font-btn ">
-                  <span className="text-[32px] sm:text-[54px] xl:text-[74px] font-logo font-bold tracking-tighter leading-tight z-10">getlinked Tech</span>
+                  <span 
+                  className="text-[32px] sm:text-[54px] xl:text-[74px] font-logo font-bold tracking-tighter leading-tight z-10">getlinked Tech</span>
                   <div className=" flex items-center flex-wrap xl:flex-nowrap w-full">
                     <span className="text-[32px] sm:text-[54px] xl:text-[74px] font-logo font-bold tracking-tighter  leading-tight flex mr-1 z-30">Hackathon <span className=" text-[#D434FE]">1.0</span></span>
                     <span><img src={Chain} className="w-[32.8px] h-[32.8px]  md:w-[86px] md:h-[86px]"/></span>
@@ -55,7 +59,9 @@ const Body = () => {
                     </span>
                   </div>
                   <p className=" text-[20px] mt-2 z-30">Participate in getlinked tech Hackathon 2023 stand<br/>a chance to win a Big prize</p>
-                  <button className="mt-5 text-[#FFFFFF] bg-gradient-to-r from-[#FE34B9] via-[#D434FE] via-45% to-[#903AFF]  w-[172px] h-[53px] font-btn rounded-[4px]">Register</button>
+                  <button 
+                  onClick={() => navigate("/register")}
+                  className="mt-5 text-[#FFFFFF] bg-gradient-to-r from-[#FE34B9] via-[#D434FE] via-45% to-[#903AFF]  w-[172px] h-[53px] font-btn rounded-[4px] z-10">Register</button>
                 </article>
                 <div className="mt-5 flex gap-5">
                   <p className=" font-unica text-[64px]">00<span className=" text-lg">H</span></p>
@@ -137,7 +143,7 @@ const Body = () => {
             <button className="text-[#FFFFFF] bg-gradient-to-r from-[#FE34B9] via-[#D434FE] via-45% to-[#903AFF]  w-[172px] h-[53px] font-btn rounded-[4px]">Register</button>
           </article>
         </section>{/**END Criteria Section */}
-        <section id="faqs" className="relative flex flex-col lg:flex-row-reverse gap-9 lg:gap-0 w-full px-12 md:px-20 lg:px-32 py-24 md:py-24 border-y items-center ">{/**Rules Section */}
+        <section id="faqs" className="relative flex flex-col lg:flex-row-reverse gap-9 lg:gap-0 w-full px-12 md:px-20 lg:px-32 py-24 md:py-24 border-y items-center scroll-mt-16 lg:scroll-mt-[90px]">{/**Rules Section */}
           <img src={Flare} className="absolute -right-[430px] -top-[350px] blur-3xl opacity-30" />
           <div className="relative w-full lg:w-1/2">
             <img src={SataGra}  className="absolute w-[21px] h-[26px] -top-7 left-[50%] grayscale-[30%]" />{/**Star */}
@@ -152,32 +158,7 @@ const Body = () => {
             <h4 className=" font-logo text-xl lg:text-[32px] font-bold leading-snug tracking-tight mb-5 ">Frequently Asked<br/><span className=" text-[#D434FE]">Questions</span></h4>
             <p className=" font-btn text-sm mb-8">We got answers to the questions that you might<br/>
             want to ask about <span className=" text-base font-bold">getlinked Hackathon 1.0</span></p>
-            <div className="w-full md:w-[80%] flex flex-col gap-2">{/**FAQs Container */}
-              <div className=" flex justify-between items-center font-btn text-sm border-b border-[#D434FE] py-2 cursor-pointer">{/**FAQ Item */}
-                <p className=" text-left">Can I work on a project I started before the hackathon?</p>
-                <button className=" text-xl text-[#D434FE]">+</button>
-              </div>
-              <div className=" flex justify-between items-center font-btn text-sm border-b border-[#D434FE] py-2 cursor-pointer">{/**FAQ Item */}
-                <p className=" text-left">Can I work on a project I started before the hackathon?</p>
-                <button className=" text-xl text-[#D434FE]">+</button>
-              </div>
-              <div className=" flex justify-between items-center font-btn text-sm border-b border-[#D434FE] py-2 cursor-pointer">{/**FAQ Item */}
-                <p className=" text-left">Can I work on a project I started before the hackathon?</p>
-                <button className=" text-xl text-[#D434FE]">+</button>
-              </div>
-              <div className=" flex justify-between items-center font-btn text-sm border-b border-[#D434FE] py-2 cursor-pointer">{/**FAQ Item */}
-                <p className=" text-left">Can I work on a project I started before the hackathon?</p>
-                <button className=" text-xl text-[#D434FE]">+</button>
-              </div>
-              <div className=" flex justify-between items-center font-btn text-sm border-b border-[#D434FE] py-2 cursor-pointer">{/**FAQ Item */}
-                <p className=" text-left">Can I work on a project I started before the hackathon?</p>
-                <button className=" text-xl text-[#D434FE]">+</button>
-              </div>
-              <div className=" flex justify-between items-center font-btn text-sm border-b border-[#D434FE] py-2 cursor-pointer">{/**FAQ Item */}
-                <p className=" text-left">Can I work on a project I started before the hackathon?</p>
-                <button className=" text-xl text-[#D434FE]">+</button>
-              </div>
-            </div>
+            <FAQs />
           </article>
         </section>{/**END of FAQs Section */}
         <section className="w-full px-12 md:px-20 lg:px-32 py-12 md:py-24 border-y">{/**ANNOUNCEMENT Section */}

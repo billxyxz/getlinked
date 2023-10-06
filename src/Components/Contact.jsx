@@ -11,7 +11,7 @@ const Contact = () => {
   const contactFormRef = useRef();
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0,0)
   }, []);
 
     async function handleSubmit(e){

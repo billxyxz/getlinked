@@ -37,7 +37,8 @@ const Navbar = () => {
             <ul className="flex flex-col md:flex-row text-lg md:text-base lg:text-lg font-medium gap-3 md:gap-6 text-white">
                 <li><a href="#">Timeline</a></li>
                 <li><a href="#">Overview</a></li>
-                <li><a href="#faqs">FAQs</a></li>
+                <li><a 
+                href="#faqs">FAQs</a></li>
                 <li><NavLink 
                 onClick={() => setShowNav(false)}
                 style={handleActiveLink}

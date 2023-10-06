@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import SataGra from "../Assets/Images/satagra.png"
 import StarPu from "../Assets/Images/starpu.png"
 import Star from "../Assets/Images/staro.png"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -28,7 +29,7 @@ const Footer = () => {
                     <li>Overview</li>
                     <li>Timeline</li>
                     <li>FAQs</li>
-                    <li>Register</li>
+                    <li><Link to="/register">Register</Link></li>
                 </ol>
                 <ul className="flex items-center gap-3">
                     <li className="text-[#D434FE]">Follow us</li>

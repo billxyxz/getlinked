@@ -17,7 +17,7 @@ const Navbar = () => {
         e.preventDefault();
         let faq = document.getElementById("faqs");
         faq && faq.scrollIntoView();
-        console.log(faq)
+        setShowNav(false);
       }
 
   return (

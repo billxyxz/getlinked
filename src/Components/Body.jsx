@@ -39,6 +39,7 @@ const Body = () => {
   }, []);
 
 
+
   return (
     <main className="relative w-full min-h-screen bg-[#150E28] text-[#FFFFFF] overflow-hidden pt-[90px] md:pt-[154px]">
         <article className="absolute left-12 md:left-auto lg:right-32 lg:top-[108px] md:right-20 font-btn ">

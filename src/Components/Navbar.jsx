@@ -13,6 +13,13 @@ const Navbar = () => {
         }
     }
 
+    function handleFaqInView(e){
+        e.preventDefault();
+        let faq = document.getElementById("faqs");
+        faq && faq.scrollIntoView();
+        console.log(faq)
+      }
+
   return (
     <header className="fixed top-0 left-0 w-full px-12 md:px-20 lg:px-32 flex justify-between items-center py-[30px] pb-[20px] border-b bg-[#150E28] z-40">
         <Link 
@@ -35,10 +42,11 @@ const Navbar = () => {
 
         <nav className={`absolute left-0 top-[71px] md:top-0 md:relative flex flex-col md:flex-row w-full md:w-auto justify-between md:items-center p-12 gap-6 md:gap-0 md:p-0 bg-[#150E28] md:bg-transparent md:translate-x-0 ${showNav ? "" : "translate-x-full"} transition-all`}>
             <ul className="flex flex-col md:flex-row text-lg md:text-base lg:text-lg font-medium gap-3 md:gap-6 text-white">
-                <li><a href="#">Timeline</a></li>
-                <li><a href="#">Overview</a></li>
-                <li><a 
-                href="#faqs">FAQs</a></li>
+                <li><a href="/">Timeline</a></li>
+                <li><a href="/">Overview</a></li>
+                <li><a
+                onClick={handleFaqInView}
+                href="/">FAQs</a></li>
                 <li><NavLink 
                 onClick={() => setShowNav(false)}
                 style={handleActiveLink}
